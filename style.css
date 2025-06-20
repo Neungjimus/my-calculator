@@ -1,0 +1,85 @@
+/* 모든 요소의 기본 여백 제거 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* HTML과 Body의 기본 설정 */
+html, body {
+height: 100%;
+}
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFFFFF;
+        }
+
+/* 계산기 컨테이너 스타일 */
+        .calculator-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 2px solid #444;
+            padding: 20px;
+            width: 300px;
+            background-color: #f0f0f0;
+        }
+
+/* display 영역 스타일 */
+        .display {
+            border: 1px solid #999;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 10px;
+            background-color: white;
+            font-size: 24px;
+        }
+
+/* buttons 영역 스타일 */
+        .buttons {
+            border: 1px solid #999;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: space-between;
+        }
+/* 공동 버튼 스타일 */
+        .button {
+            flex: 1 0 22%;
+            height: 40px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+/* zero 크기 설정 */
+        .zero {
+            flex: 0 0 50% ;
+        }
+/* 버튼 색 설정 */
+        .number {
+            background-color: #FFFFFF;
+            color: #000;
+        }
+
+        .operator {
+            background-color: #FFFFFF;
+            color: #000;
+        }
+        .function {
+            background-color: #FFFFFF;
+            color: #000;
+        }
+/* 마우스 올렸을때 */
+.button:hover {
+    background-color: #00000022
+
+}
+/* 클릭했을때 */
+.button:active {
+    background-color: pink;
+}
