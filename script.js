@@ -73,7 +73,7 @@ functionButtons.forEach(button => {
                 } else if (value === '%') {
                     let currentValue = parseFloat(display.textContent);
                     if (!isNaN(currentValue)) {
-                        display.textContent = (currentValue / 10).toString();
+                        display.textContent = (currentValue / 100).toString();
                     }
             
         }
